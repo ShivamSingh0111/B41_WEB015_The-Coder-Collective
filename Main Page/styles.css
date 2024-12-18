@@ -116,3 +116,39 @@ body{
     justify-content: center;
     align-items: center;
 }
+.s1{
+    background-color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    margin-right: 300px;
+}
+.s1-top{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.s1-top>button{
+    border: none;
+    padding: 10px;
+    background-color: #2A55E5;
+    color: white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.s1-products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+.product{
+    background-color: white;
+    flex-basis: 15%;
+}
+.product>img{
+    border: transparent;
+    width: auto; 
+    height: 200px;
+}
