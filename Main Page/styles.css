@@ -9,10 +9,10 @@ body{
     display: flex;
     flex: 1;
     background-color: white;
-    padding: 15px 5%;
+    padding: 8px 5%;
     align-items: center;
     gap: 30px;
-    justify-content: space-between;
+    justify-content: space-around   ;
 }
 
 .searchbar{
