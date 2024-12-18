@@ -10,6 +10,8 @@ body{
     flex: 1;
     background-color: white;
     padding: 15px 5%;
+    align-items: center;
+    gap: 30px;
     justify-content: space-between;
 }
 
@@ -17,6 +19,7 @@ body{
     background-color: #F0F5FF;
     flex: 1;
     display: flex;
+    border-radius: 10px;
     align-items: center;
     padding: 15px 15px;
 }
@@ -24,5 +27,92 @@ body{
 .searchbar>input[type="search"]{
     border: 0;
     outline: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 200;
     background-color: transparent;
+}
+/* navbar links */
+.links{
+    flex: 1;
+    display: flex;
+}
+
+.links>a{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(79, 79, 79);
+}
+.active:hover{
+    background-color: #2A55E5;
+    border-radius: 10px;
+    color: white;
+}
+.categories{
+    background-color: white;
+    margin: 5px 10px;
+    padding: 10px 10px ;
+    display: flex;
+    justify-content: center;
+}
+
+.cat-card{
+    width: 10%;
+    height: auto;
+    text-align: center;
+}
+.cat-card>h4{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-wrap: nowrap;
+}
+
+.act:hover{
+    color:#2A55E5;
+}
+
+.banner{
+    flex: 1;
+}
+
+.banner>img{
+    margin: 5px 10px;
+    margin-right: 3px;
+    width: 99%;
+}
+
+
+.swiper {
+    width: 99%;
+    height: 99%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.swiper-button-next,
+.swiper-button-prev{
+    background-color: white;
+    border-radius: 8px;
+    margin: -20px;
+    padding: 10px;
+    height: 80px;
+    top: 95px;
+    justify-content: center;
+    align-items: center;
 }

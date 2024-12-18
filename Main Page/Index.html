@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipkart Clone</title>
+    <title>Flipkart Clone MY</title>
+    <link rel="shortcut icon" href="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/d792cef6f0.js" crossorigin="anonymous"></script>
 </head>
@@ -17,15 +19,133 @@
             <span>
                 <i class="fa-solid fa-magnifying-glass"></i>
             </span>
-            <input type="search" placeholder="Search for Products, Brand and More" >
+            <input type="search" size="80" placeholder="Search for Products, Brand and More" >
         </div>
        </div>
-       <div class="links"></div>
+       <div class="links">
+        <a href="" class="icon-button active">
+            <span>
+                <i class="fa-regular fa-user"></i> Login <i class="fa-solid fa-angle-down"></i>
+            </span>
+        </a>
+        <a href="" class="icon-button">
+            <span>
+                <i class="fa-solid fa-cart-shopping"></i> Cart
+            </span>
+        </a>
+        <a href="" class="icon-button">
+            <span> 
+                <i class="fa-solid fa-store"></i> Become a Seller
+            </span>
+        </a>
+        <a href="" class="icon-button">
+            <span>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </span>
+        </a>
+       </div>
 
 
 
 
 
     </div>
+
+ <!-- Categories -->
+    <div class="categories">
+        <div class="cat-card">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="Grocery">
+            <h4> Grocery</h4>
+        </div>
+
+        <div class="cat-card">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100" alt="Mobile">
+            <h4> Mobile</h4>
+        </div>
+
+        <div class="cat-card act">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100" alt="Fashion">
+            <h4> Fashion <i class="fa-solid fa-angle-down"></i></h4> 
+        </div>
+
+        <div class="cat-card act">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100" alt="Electronics">
+            <h4> Electronics <i class="fa-solid fa-angle-down"></i></h4>
+        </div>
+
+        <div class="cat-card act">
+            <img src="	https://rukminim1.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100" alt="Home & Furniture">
+            <h4>Home & Furniture <i class="fa-solid fa-angle-down"></i></h4>
+        </div>
+
+        <div class="cat-card">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/0139228b2f7eb413.jpg?q=100" alt="Appliances">
+            <h4> Appliances</h4>
+        </div>
+        
+        <div class="cat-card">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/71050627a56b4693.png?q=100" alt="Flight Booking">
+            <h4> Flight Booking</h4>
+        </div>
+
+        <div class="cat-card act">
+            <img src="	https://rukminim1.flixcart.com/flap/80/80/image/dff3f7adcf3a90c6.png?q=100" alt="Beauty, Toys & more">
+            <h4> Beauty, Toys & More <i class="fa-solid fa-angle-down"></i></h4>
+        </div>
+
+        <div class="cat-card act">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/05d708653beff580.png?q=100" alt="Two Wheeler"> 
+            <h4> Two Wheeler <i class="fa-solid fa-angle-down"></i></h4>
+        </div>
+    </div>
+
+ <!-- banner -->
+ <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1620/270/image/3db48f3341053283.jpg?q=20" alt="banner1">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1620/270/image/7ba5649b8d3f6f1a.jpg?q=20" alt="banner2">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1620/270/image/fede1719ccaa5a58.jpg?q=20" alt="banner 3">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1620/270/image/d9290fb51138d286.png?q=20" alt="banner 4">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1620/270/image/8f494c67546d5204.jpeg?q=20" alt="banner 5">
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  
+
+
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop : true,
+      autoplay:{
+        delay:2500,
+        disableOnInteraction:false,
+      },
+    });
+  </script>
 </body>
 </html>
