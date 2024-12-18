@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    box-sizing:border-box ;
 }
 body{
     background-color: rgb(218, 218, 218);
@@ -116,39 +117,71 @@ body{
     justify-content: center;
     align-items: center;
 }
-.s1{
-    background-color: white;
-    padding: 10px 20px;
+.bestElectronic-container{
+    height: 380px;
+    display: flex;
     margin: 10px;
-    margin-right: 300px;
+    justify-content: space-between;
 }
-.s1-top{
-    font-family: 'Times New Roman', Times, serif;
+.left-part{
+    background-color: white;
+    width: 79%;
+}
+.right-part{
+    background-color: white;
+    width: 20%;
+    padding: .3em;
+}
+.right-part>img{
+        height: 100%;
+        width: 100%;
+}
+.leftPart-top{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    padding: 20px;
+    height: 20%;
+    border-bottom: 1px solid #ccc;
 }
-.s1-top>button{
-    border: none;
-    padding: 10px;
+.ViewAll_Btn{
     background-color: #2A55E5;
     color: white;
-    border-radius: 100%;
+    border: none;
+    border-radius: 50%;
+    padding:  10px; 
+    padding-left: 20px;
+    padding-right: 20px;
     cursor: pointer;
+    align-items: center;
 }
-.s1-products{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 20px;
+.leftpart-cart-container{
+    
+    height: 80%;
 }
-
-.product{
-    background-color: white;
-    flex-basis: 15%;
+.cart-product {
+    width: 160px;
+    margin: 30px;
+    margin-top: 10px;
+    
+    text-align: center;
+    border: 1px solid #dddddd;    
 }
-.product>img{
-    border: transparent;
-    width: auto; 
-    height: 200px;
+.cart-product img{
+    width: 120px;
+    height: 230px;
+}
+.cart-product-name{
+    margin:0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #7d7d7d;
+}
+.cart-product-price{
+    margin:0;
+    font-size: 14px;
+    font-weight: bold;
 }
