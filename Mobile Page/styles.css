@@ -131,6 +131,7 @@ header {
     max-width: 50px;
     border-radius: 5px;
     padding: 2px;
+    padding-left: 6px;
 }
 
 
@@ -232,7 +233,6 @@ header {
 #logo-tag{
     color: goldenrod;
 }
-
 
 /* footer */
 
