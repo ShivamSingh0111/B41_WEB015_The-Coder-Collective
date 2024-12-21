@@ -216,15 +216,6 @@ body{
 
 
 /* footer */
-#footerHead {
-    /* background-color: #f8f8f8; */
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #555;
-    border-bottom: 1px solid #e0e0e0;
-}
 
 #footerBody {
     display: flex;
@@ -275,5 +266,4 @@ body{
 }
 #logo-tag{
     color: goldenrod;
-    
 }
