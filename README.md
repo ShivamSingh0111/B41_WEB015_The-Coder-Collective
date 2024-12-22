@@ -1,6 +1,6 @@
 # Shop-Cart - (Flipkart Clone)
 
-**Sohp Cart** is a clone of the popular e-commerce website **Flipkart**. The project features a variety of products for sale, including electronics, groceries, and clothing for men and women. It also implements localStorage for user login and registration functionality.
+**Shop Cart** is a clone of the popular e-commerce website **Flipkart**. The project features a variety of products for sale, including electronics, groceries, and clothing for men and women. It also implements localStorage for user login and registration functionality.
 
 ### Team Members
 - **Shivam Singh** (Group Leader)
