@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart Men's Section Clone</title>
+    <link rel="stylesheet" href="../Navabar/Style/womens.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="shortcut icon" href="../Navabar/image/shopcart.jpg" width="100" type="image/x-icon"  >
+    <link rel="stylesheet" href="../Navabar/Style/index.css">
+    <link rel="stylesheet" href="../Navabar/Style/sideBar.css">
+  </head>
+  <body>
+
+
+    <header>
+      <div id="logo">
+          <a href="/index.html"><img src="../Navabar/image/shopcart.jpg" alt="ShopKart logo" ></a>
+      </div>
+      <div id="searchBar">
+          <div id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
+         <input type="text" placeholder="Search for Product,Brands and More">
+      </div>
+
+              <!-- hamburger part -->
+     <!-- <button class="hamburger" id="hamburger" style="color: black; ">&#9776;</button> -->
+
+      <nav>
+        <ul>
+          <li id="loginLink" class="dropdown">
+            <i class="fa-regular fa-circle-user"></i> Login 
+            <i class="fa-solid fa-chevron-down"></i>
+            <div id="dropDown-content" class="dropdown-content">
+              <div style="display: flex; padding: 15px; justify-content: space-between;">
+                 <a style="color: black;" href="../Page/login.html"><h4>New Customer?</h4></a>
+                 <h4 style="font-weight: bold; color: rgb(54, 54, 236);">Sign Up</h4>
+              </div>
+              <hr>
+              <a href="#"> <i class="fa-regular fa-circle-user"></i> Profile</a>
+              <a href="#"> <i class="fa-brands fa-hornbill"></i> Flipkart Plus Zone</a>
+              <a href="#"> <i class="fa-solid fa-box"></i> Orders</a>
+              <a href="#"> <i class="fa-regular fa-heart"></i> Wishlist</a>
+              <a href="#"><i class="fa-solid fa-gift"></i> Reward</a>
+              <a href="#"><i class="fa-regular fa-credit-card"></i> Gift Card</a>
+            </div>
+          </li>
+        
+          <!-- cart Part -->
+          <li class="cart-icon">
+           
+            <div id="cartBtn"> <i class="fa-regular fa-circle-user"></i>Cart
+              <!-- <span id="cartCount" class="cart-count">0</span> -->
+            </div>
+          </li>
+          <a style="text-decoration: none;" href="../Page/Sellers page/index4.html"><li>
+            <i class="fa-solid fa-shop"></i> Become a Seller</li> </a>
+        </ul>
+      </nav>
+    </header>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+<div class="sidebar-header">
+<h2>Cart</h2>
+<button id="closeBtn">&times;</button>
+</div>
+<div class="sidebar-content" >
+
+
+
+</div>
+</div>
+
+
+    <!-- Main Content -->
+    <div class="main-container">
+      <!-- Sidebar -->
+      <aside class="filtersidebar">
+        <!-- Image Section -->
+        <div class="image-container">
+          <img
+            src="../Navabar/image/womens_Image.jpg" width="150px"
+            alt="Filters Image"
+          />
+        </div>
+        <h3>FILTERS <span class="clear">CLEAR ALL</span></h3>
+        <!-- Categories -->
+        <div class="filter-category">
+          <h4>Categories</h4>
+          <label><input type="checkbox" /> Tops</label><br />
+          <label><input type="checkbox" /> Jeans</label><br />
+          <label><input type="checkbox" /> Sarees</label><br />
+          <label><input type="checkbox" /> Kurtis</label><br />
+          <label><input type="checkbox" /> Suits</label><br />
+          <label><input type="checkbox" /> Gowns</label>
+        </div>
+
+        <!-- Gender -->
+        <div class="filter-gender">
+          <h4>Gender</h4>
+          <label><input type="checkbox" /> <strong>Women</strong></label>
+          <br />
+          <label><input type="checkbox" /> <strong>Men</strong></label>
+        </div>
+
+        <!-- Price -->
+        <div class="filter-price">
+          <h4>Price</h4>
+          <div class="price-slider">
+            <input type="range" min="0" max="1000" />
+            <div>
+              <input type="number" placeholder="Min" /> <br />
+              to<br />
+              <input type="number" placeholder="₹1000+" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Offers -->
+        <div class="filter-offers">
+          <h4>Offers</h4>
+          <label><input type="checkbox" /> Buy More, Save More</label><br />
+          <label><input type="checkbox" /> Special Price</label><br />
+          <label><input type="checkbox" /> Buy One, Get One</label><br />
+          <label><input type="checkbox" /> Buy Two, Get More</label><br />
+        </div>
+
+        <!-- Customer Ratings -->
+        <div class="filter-ratings">
+          <h4>Customer Ratings</h4>
+          <label><input type="checkbox" /> 5 ★★★★★</label><br />
+          <label><input type="checkbox" /> 4 ★★★★</label><br />
+          <label><input type="checkbox" /> 3 ★★★</label><br />
+          <label><input type="checkbox" /> 2 ★★</label><br />
+          <label><input type="checkbox" /> 1 ★</label><br />
+        </div>
+
+        <!-- Discount -->
+        <div class="filter-discount">
+          <h4>Discount</h4>
+          <label><input type="checkbox" /> 10% or more</label><br />
+          <label><input type="checkbox" /> 20% or more</label><br />
+          <label><input type="checkbox" /> 30% or more</label><br />
+          <label><input type="checkbox" /> 40% or more</label><br />
+          <label><input type="checkbox" /> 50% or more</label><br />
+        </div>
+
+        <!-- Size -->
+        <div class="filter-size">
+          <h4>Size</h4>
+          <label><input type="checkbox" /> 3XS</label><br />
+          <label><input type="checkbox" /> 2XS</label><br />
+          <label><input type="checkbox" /> XS</label><br />
+          <label><input type="checkbox" /> S</label><br />
+          <label><input type="checkbox" /> M</label><br />
+          <label><input type="checkbox" /> L</label><br />
+        </div>
+      </aside>
+
+    <!-- Product Grid -->
+    <section class="product-grid">
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/e/s/h/m-tr-bandhani-trahimam-original-imah7gga49phaggh.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>VeBNor</h4>
+        <p class="description">Women Regular Fit Solid A-Line Dress</p>
+        <p class="price">
+          ₹299 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/r/d/w/l-gs878-libas-original-imah6hc4xu98mymp.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>XXVX</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹499 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/i/3/z/m-rl-vskd32852-varanga-original-imah4vzwuxscchhq.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>DTXY</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹299 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/v/e/3/m-rl-vskd32852-varanga-original-imah4vzw6mhsrzrj.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>LeFy</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹329 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/k7z3afk0/kurta/p/c/d/l-20few13354-311480-w-original-imafq39zxtdcuyjd.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>MuFty</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹299 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/v/l/o/3xl-f4w-r-maternity-1058-fashion4word-original-imahfegm7vykgg7a.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>ZXR</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹249 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/m/s/4/xl-rmmcrafted15459ss22owht-rangriti-original-imagh3g29zjhvyhr.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>DTDC</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹249 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/sari/x/x/g/free-sambalpuri-queen-6-9-house-of-common-no-blouse-original-imah4rx5x2m7du5h.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>XXVX</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹246 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/w/q/t/3xl-georgette-palazzo-kvish-original-imahy9wzj9dfecgp.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>HRX</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹349 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/t/0/b/s-pink-yoke-straight-kurti-prisca-original-imah4u6gwb7hcb5y.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>ZARA</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹455 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/a/s/x/3xl-short-kurta-509-yaltas-original-imagz2kzzkf8tecx.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>Drinkers</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹299 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/m/c/r/m-dtk596-daevish-k-original-imah6svpkjvnr3qx.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>MuFty</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹299 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/c/x/7/xxl-women-cotton-blend-kurta-palazzo-vidhi-enterprise-original-imah7k58mafnugdp.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>LeFy</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹299 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/s/l/6/s-dv655-daevish-original-imah4egndbr6hzkf.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>TeachFirst</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹308 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/o/5/f/3xl-white-maharaja-textile-original-imahycy7cnjhm2ff.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>VSDG First</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹595 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/l/r/p/xl-tr-1058-nahiko-original-imahf9zfyznbnuwv.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>DTRS</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹674 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/h/m/t/m-dtk595-daevish-k-original-imah7n4bvdn8tz7g.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>VeBNor</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹299 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/y/w/n/xl-jasmin-oniyuri-original-imah6xh4ge7khqrd.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>Houser</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹249 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/6/8/p/xxl-dt532-divastri-original-imah79srpsqzpgve.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>SoUled</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹299 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/dress/g/2/o/xxl-dv599-daevish-original-imahfxezmmftdvmh.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>Praizy</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹299 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/r/8/g/xxl-plz-green-boti-2-psc-kjfab-original-imah6c9x3xhdgsss.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>WiNGMaN</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹548 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/a/c/o/m-short-kurta-509-tanisha-original-imagjg4gmgbzck8f.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>DSX</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹199 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/y/a/j/xl-sk-003-big-bandhni-musted-emb-deepyog-original-imah6yv62gb2yryj.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>HRX</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹349 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/j/q/o/m-gl657-glamalue-original-imah4egjqmcpzvaj.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>BewaKoof</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹308 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/q/3/2/m-na-green-printed-kurti-m-vttextile-original-imagzexvfu3z2qqh.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>VeBNor</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹389 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/p/r/u/s-ku1011-blue-dsk-studio-original-imah3ckzzrhn5zy7.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>XXVX</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹249 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/e/u/z/l-kt5mr6557-indo-era-original-imah77gyggy7ckth.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>The SOuled Store</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹308 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/w/8/g/l-32-line-kurtii-navy-blue-hermiston-original-imah689wr5b52wvn.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>HRX</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹379 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/n/k/l/l-dv654-daevish-original-imah4eg7yg9uewkr.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>ASUK</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹394 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/e/f/d/3xl-ajrakh1-raghav-silk-studio-original-imahfgtnbyvuxgd3.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>KaJaru</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹252 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/l1zc6fk0/kurta/6/z/h/s-23485o-libas-original-imagdfetbhytrktj.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>Youth First</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹279 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/q/3/2/m-na-green-printed-kurti-m-vttextile-original-imagzexvfu3z2qqh.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>EyeBogler</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹289 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/3/g/l/m-dtk589-daevish-k-original-imah7n4hau8qwkuu.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>PRAIZY</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹491 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/2/q/f/l-507hoc-houseofcommon-original-imah3yufwdcrpkrz.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>AJOLLI</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹349 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/y/m/s/l-dv653-daevish-original-imah4eh9gf28gaka.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>KyK</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹249 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/c/z/i/s-sk-4-big-carry-multicolor-st-kurta-kjfab-original-imah7kvnwmjugbjw.jpeg?q=70"
+          alt="Product"
+        />
+        <p class="sponsored">Sponsored</p>
+        <h4>HRX</h4>
+        <p class="description">Women Regular Fit Solid Spread Collar Shirt</p>
+        <p class="price">
+          ₹269 <span class="original-price">₹999</span>
+          <span class="discount">70% off</span>
+        </p>
+        <p class="badge">Hot Deal</p>
+        <p class="sizes">Size XS, S, M, L, XL, XXL</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+    </div>
+    <div class="pagination">
+      <span>Page 1 of 617</span>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">7</a>
+      <a href="#">8</a>
+      <a href="#">9</a>
+      <a href="#">10</a>
+      <a href="#">Next</a>
+    </div>
+
+    <div class="feedback-box">
+      <h3>Did you find what you were looking for?</h3>
+      <button onclick="alert('Thank you for your feedback!')">Yes</button>
+      <button onclick="alert('Sorry to hear that. We’ll improve!')">No</button>
+    </div>
+
+    <!-- Footer -->
+    <div id="footerHead">
+      <p>
+        <br />FOREVER 21 Topwear ,French Connection Topwear ,Adrenex Topwear
+        ,ARROW Topwear ,PARK AVENUE Topwear ,Dais Topwear ,MAX Topwear ,JACK &
+        JONES Topwear ,Louis Philippe Jeans Topwear ,HERE&NOW Topwear ,BEING
+        HUMAN Topwear ,KILLER Topwear ,Puma Topwear ,Jack & Jones Topwear ,PETER
+        ENGLAND Topwear ,Flying Machine Topwear ,BlueArrow Topwear ,HRX by
+        Hrithik Roshan Topwear ,John Players Topwear ,adidas Topwear Browse
+        Through Latest Topwear for Men, Women, and Kids Are you looking for ways
+        to refresh your wardrobe? Stay up-to-date with the latest fashion trends
+        by shopping for topwear from your favorite online shopping site
+        Flipkart. Tops, shirts, vests, tank tops, blouses, T-shirts, crop tops,
+        and more, name it and you can find the one you’re looking for on an
+        online shopping store. Browse through the vast collection of men’s wear,
+        women’s wear, and kid’s wear online and enjoy a hassle-free online
+        shopping experience. You can avail amazing deals and discounts on your
+        purchases when you shop online. Also, these clothes will be safely
+        delivered to your doorstep in a couple of days. Look stunning and
+        stylish at every event, party, or occasion by wearing trendy tops. Pair
+        them with coordinating bottom wear and the right kind of footwear, and
+        be ready to receive a ton of compliments wherever you go. When you wear
+        the right type of clothing, you can nail any look, be it casual, formal,
+        or party wear.
+        <br />
+
+        <br>Explore Topwear Collections Online Keep up with the changing fashion
+        trends by shopping for the best men’s wear from your favorite e-commerce
+        store. Check out the amazing collection of T-shirts for men that are
+        offered by trending brands, such as FastColors, Try This, Smartees,
+        Tripr, Wildcraft, Wrangler, Levi's, Lee, U.S. Polo Assn., W, Peter
+        England, and more. You can buy these T-shirts in different neck types,
+        like polo neck, button-down, shawl neck, collared neck, cowl neck, and
+        more. You can also check out formal, casual, loungewear, beachwear,
+        party wear shirts, and more online. Browse through the huge collection
+        of shirts for men that are offered by popular brands, such as
+        Highlander, Rope, Peter England, Levi's, Asian & Fitch, Metronaut, and
+        more. Also, check out some of the classy and stylish jackets, coats,
+        blazers, and sweaters online. Whether you’re looking for office wear,
+        party wear, casual wear, or home wear, online shopping sites have all
+        types of tops that you’re looking for. Check out the trendy and
+        sophisticated women’s tops online that are sold by brands, such as Vero
+        Moda, People, Fleximaa, U&F, Tokyo Talkies, Harpa, Rebound, Wrangler,
+        Levi's, Lee, and more. You can buy shirts and T-shirts for women in
+        solid colors or go for printed ones as well. Browse through the plethora
+        of women’s shirts and choose the ones that best suit your sense of
+        style. You can also buy stylish topwear for kids from an online store.
+        You can browse through the fabulous collection of kid’s T-shirts and
+        kid’s shirts and buy the ones that will best suit your little ones.
+        Brands, such as Miss & Chief, Gkidz, FabTag - Kiddeo, Allen Solly, and
+        more have an amazing collection of kids’ wear. Buy the Best Topwear
+        Online You can buy the topwear of your choice in just a few click/taps.
+        Log in to Flipkart through your smartphone, tablet, or laptop, browse
+        through the amazing collection of tops, shirts, and blouses, choose the
+        ones that you like, add them to the cart, and buy them in a convenient
+        way. You can choose a preferred payment method during the checkout
+        process. Online shopping helps you save time and lets you purchase the
+        items of your choice even when you’re at home, traveling, or at the
+        office.<br>
+
+        <br />
+        <br />
+        <h4>Popular Searches: Sarees | Kurtis | Lehenga | Anarkali | Gowns | Palazzo
+            | Jackets | Sweatshirts | Dresses | Bra | Lingerie | Nighty | Shorts |
+            Mens Kurta | Kurta Pajama | Designer Sarees | Designer Kurtis | Designer
+            Salwar Suits</h4>
+        <br />
+        <br />
+      </p>
+    </div>
+    <div id="footerBody">
+      <div id="subscribe">
+        <img src="../Navabar/image/logo.png.jpeg" alt="Logo" />
+        <p>Subscribe to email alerts. We promise not to spam your inbox.</p>
+        <input type="text" placeholder="Email Address" />
+        <button>SUBSCRIBE</button>
+        <div id="icons">
+          <button><img src="../Navabar/image/facebook.png" alt="Icon 1" /></button>
+          <button><img src="../Navabar/image/twitter.png" alt="Icon 2" /></button>
+          <button><img src="../Navabar/image/instagram (1).png" alt="Icon 3" /></button>
+          <button><img src="../Navabar/image/youtube.png" alt="Icon 4" /></button>
+        </div>
+      </div>
+      <div class="list_cards">
+        <h4>SHOP</h4>
+        <p>Shirts</p>
+        <p>T Shirts</p>
+        <p>Wired Headphones</p>
+        <p>Wireless Speakers</p>
+        <p>Home Decoration</p>
+        <p>Mobile Accessories</p>
+        <p>Smart Watches</p>
+        <p>Womens Wear</p>
+        <p>Top</p>
+        <p>Jeans</p>
+        <p>Rock In India</p>
+        <p>Earn Rs.100</p>
+      </div>
+      <div class="list_cards">
+        <h4>HELP</h4>
+        <p>Track Your Order</p>
+        <p>Warranty & Support</p>
+        <p>Return Policy</p>
+        <p>Service Center</p>
+        <p>Bulk Order</p>
+        <p>FAQs</p>
+        <p>Why Buy Direct</p>
+      </div>
+      <div class="list_cards">
+        <h4>COMPANY</h4>
+        <p>About ShopCart</p>
+        <p>News</p>
+        <p>Read Our Blog</p>
+        <p>Careers</p>
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+        <p>Investor Relations</p>
+      </div>
+    </div>
+    <div id="footerMid">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fotter_payment_icn_2_900x_aff68517-98f4-4a82-9aee-2405cea66251_350x.png?v=1650262054"
+        alt="Payment Methods"
+      />
+      <div id="app">
+        <h3>DOWNLOAD THE APP</h3>
+        <div id="app-img">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/google-play.png?v=1608620293"
+            alt="Google Play"
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/app-store.png?v=1608620293"
+            alt="App Store"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="footerEnd">
+      <p>© 2007-2024 ShopCart.com. All Rights Reserved.</p>
+    </div>
+  </body>
+</html>
+<script src="../Navabar/JS/sidebar.js"></script>
+<script type="module" src="../Navabar/JS/index.js"></script>
+<script type="module" src="../Navabar/JS/mens.js"></script>

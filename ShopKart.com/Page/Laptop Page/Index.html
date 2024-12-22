@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Laptop Section Clone</title>
+    <link rel="stylesheet" href="laptop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="/Navabar/image/shopcart.jpg" width="100" type="image/x-icon"  >
+    <link rel="stylesheet" href="/Navabar/Style/index.css">
+    <link rel="stylesheet" href="/Navabar/Style/sideBar.css">
+</head>
+<body>
+ 
+<!-- navbar part -->
+    <header>
+        <div id="logo">
+            <a href="/index.html"><img src="/Navabar/image/shopcart.jpg" alt="ShopKart logo" ></a>
+        </div>
+        <div id="searchBar">
+            <div id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
+           <input type="text" placeholder="Search for Product,Brands and More">
+        </div>
+
+                <!-- hamburger part -->
+      <button class="hamburger" id="hamburger" style="color: black; ">&#9776;</button> 
+
+        <nav>
+          <ul>
+            <li id="loginLink" class="dropdown" style="color: blue;">
+              <i class="fa-regular fa-circle-user"></i> Login 
+              <i class="fa-solid fa-chevron-down"></i>
+              <div id="dropDown-content" class="dropdown-content">
+                <div style="display: flex; padding: 15px; justify-content: space-between;">
+                   <a style="color: black;" href="/Page/login.html"><h4>New Customer?</h4></a>
+                   <h4 style="font-weight: bold; color: rgb(54, 54, 236);">Sign Up</h4>
+                </div>
+                <hr>
+                <a href="#"> <i class="fa-regular fa-circle-user"></i> Profile</a>
+                <a href="#"> <i class="fa-brands fa-hornbill"></i> Flipkart Plus Zone</a>
+                <a href="#"> <i class="fa-solid fa-box"></i> Orders</a>
+                <a href="#"> <i class="fa-regular fa-heart"></i> Wishlist</a>
+                <a href="#"><i class="fa-solid fa-gift"></i> Reward</a>
+                <a href="#"><i class="fa-regular fa-credit-card"></i> Gift Card</a>
+              </div>
+            </li>
+          
+            <!-- cart Part -->
+            <li class="cart-icon">
+             
+              <div id="cartBtn" style="color: blue;"> <i class="fa-regular fa-circle-user"></i>Cart
+                <!-- <span id="cartCount" class="cart-count">0</span> -->
+              </div>
+            </li>
+            <a style="text-decoration: none;" href="/Page/Sellers page/index4.html"><li>
+              <i class="fa-solid fa-shop"></i> Become a Seller</li> </a>
+          </ul>
+        </nav>
+      </header>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+<div class="sidebar-header">
+  <h2>Cart</h2>
+  <button id="closeBtn">&times;</button>
+</div>
+<div class="sidebar-content" >
+  
+  
+  
+</div>
+</div>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="filtersidebar">
+            <!-- Categories -->
+            <div class="filter-category">
+                <h4>Categories</h4> <br>
+                <label><input type="checkbox"> Laptops</label><br><br>
+                <label><input type="checkbox"> PC</label><br>
+            </div>
+            <br>
+
+            <div class="filter-brand">
+            <h4>Brand</h4><br>
+                <select name="pets" id="pet-select">
+                    <option value="">--Please choose a Brand--</option>
+                    <option value="dog">Acer</option>
+                    <option value="cat">Lenovo</option>
+                    <option value="hamster">Apple</option>
+                    <option value="parrot">MSI</option>
+                    <option value="spider">ASUS</option>
+                    <option value="goldfish">HP</option>
+                </select>
+            </div>
+            <br>
+            <!-- Price -->
+            <div class="filter-price">
+                <h4>Price</h4><br>
+                <div class="price-slider">
+                    <input type="range" min="0" max="75000">
+                    <div>
+                        <input type="number" placeholder="Min"><br><br> to<br><br> <input type="number" placeholder="₹75000+">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            
+            <!-- Offers -->
+            <div class="filter-offers">
+                <h4>Offers</h4><br>
+                <label><input type="checkbox"> Buy More, Save More</label><br><br>
+                <label><input type="checkbox"> Special Price</label>
+            </div>
+
+            <br>
+
+            <!-- Customer Ratings -->
+            <div class="filter-ratings">
+                <h4>Customer Ratings</h4><br>
+                <label><input type="checkbox"> 4★ & above</label><br><br>
+                <label><input type="checkbox"> 3★ & above</label>
+            </div>
+
+            <br>
+
+            <!-- Discount -->
+            <div class="filter-discount">
+                <h4>Discount</h4><br>
+                <label><input type="checkbox"> 10% or more</label><br><br>
+                <label><input type="checkbox"> 20% or more</label>
+            </div>
+
+            <br>
+
+            <!-- Size -->
+            <div class="filter-size">
+                <h4>Size</h4><br>
+                <label><input type="checkbox"> 14"</label>
+                <label><input type="checkbox"> 15"</label>
+                <label><input type="checkbox"> 16"</label>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/computer/6/t/7/15itl05-thin-and-light-laptop-lenovo-original-imagheh5nvy6gq9k.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Lenovo </h4>
+                <p class="description"> Lenovo Lenovo IdeaPad Slim 3 Intel Core i3 11th Gen - (8 GB/256 GB SSD/Windows 11 Home) 15ITL05 Thin a...</p>
+                <p class="price">₹33990 <span class="original-price">₹48499</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes"> 4.8 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/c/q/t/lenovo-na-thin-and-light-laptop-original-imafuzt873zgp9xe.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Lenovo</h4>
+                <p class="description">Lenovo IdeaPad 3 Core i3 11th Gen - (8 GB/256 GB SSD/Windows 11 Home) 14ITL05 Thin and Light Laptop</p>
+                <p class="price">₹33899 <span class="original-price">₹60899</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.2 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/s/z/r/-original-imagetgzg4pgszmt.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>ASUS</h4>
+                <p class="description">ASUS TUF Gaming F15 Core i5 10th Gen - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce G...</p>
+                <p class="price">₹49969 <span class="original-price">₹70990</span> <span class="discount">6% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.6 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/computer/e/1/7/-original-imag3ebnzawky4kn.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>ASUS</h4>
+                <p class="description">ASUS VivoBook 15 (2022) Core i3 10th Gen - (8 GB/512 GB SSD/Windows 11 Home) X515JA-EJ362WS | X515JA-E...</p>
+                <p class="price">₹33999 <span class="original-price">₹45999</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.8 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/computer/e/1/7/-original-imag3ebnzawky4kn.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Lenovo</h4>
+                <p class="description">Lenovo Athlon Dual Core - (4 GB/256 GB SSD/DOS) E41-55 45-2 Laptop</p>
+                <p class="price">₹18999 <span class="original-price">₹38999</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">3.8 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/kuwzssw0/computer/x/l/a/redmibook-15-pro-thin-and-light-laptop-redmi-original-imag7xhnakyazyma.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Redmi</h4>
+                <p class="description">RedmiBook Pro Core i5 11th Gen - (8 GB/512 GB SSD/Windows 11 Home) Thin and Light Laptop</p>
+                <p class="price">₹38999 <span class="original-price">₹59999</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.2 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Lenovo</h4>
+                <p class="description">Lenovo Lenovo IdeaPad Slim 3 Intel Core i3 11th Gen - (8 GB/512 GB SSD/Windows 11 Home) 81X800J3IN | 8...</p>
+                <p class="price">₹36999 <span class="original-price">₹59890</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.7 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/l2m78280/computer/z/e/f/-original-imagdx9szs8xz2rk.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>ASUS</h4>
+                <p class="description">ASUS VivoBook 14 (2021) Celeron Dual Core - (4 GB/256 GB SSD/Windows 11 Home) X415MA-BV011W Thin and L...</p>
+                <p class="price">₹23999 <span class="original-price">₹33999</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.3 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/computer/7/3/l/-original-imagha3pvvc2xuz2.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>MSI</h4>
+                <p class="description">MSI Bravo 15 Ryzen 5 Hexa Core AMD R5-5600H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/AMD Radeo...</p>
+                <p class="price">₹47999 <span class="original-price">₹72990</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.7 <i class="fa-solid fa-star"></i> </p> 
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/kruyw7k0/computer/f/i/u/na-thin-and-light-laptop-lenovo-original-imag5jy6fsm2yx4q.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Lenovo</h4>
+                <p class="description">Lenovo IdeaPad 3 Core i3 11th Gen - (8 GB/512 GB SSD/Windows 11 Home) 82H801L7IN | 82H802FJIN | 82H802...</p>
+                <p class="price">₹38699 <span class="original-price">₹59999</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">3.5 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/computer/x/o/u/-original-imaghkk994ybh4fh.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>DELL</h4>
+                <p class="description">DELL Vostro Core i3 11th Gen - (8 GB/1 TB HDD/256 GB SSD/Windows 11 Home) Vostro 3510 Thin and Light L...</p>
+                <p class="price">₹39889 <span class="original-price">₹58999</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">3.7 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/ksez24w0/computer/h/8/9/rmnb1001-thin-and-light-laptop-realme-original-imag5zhgcstmjbxg.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>REALME</h4>
+                <p class="description">REALME REALME</p>
+                <p class="price">₹36990 <span class="original-price">₹54990</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.7 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/l5h2xe80/computer/h/i/p/14s-dy5005tu-thin-and-light-laptop-hp-original-imagg4rc7n75zqkp.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>HP</h4>
+                <p class="description">HP 14s Intel Core i3 11th Gen - (8 GB/256 GB SSD/Windows 11 Home) 14s - dy2507TU Thin and Light Laptop</p>
+                <p class="price">₹37999 <span class="original-price">₹47999</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.2 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/computer/q/0/8/-original-imagkgr3wcfexyd8.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Acer</h4>
+                <p class="description">acer Aspire 3 Ryzen 3 Dual Core 3250U - (8 GB/256 GB SSD/Windows 11 Home) A315-23 Laptop</p>
+                <p class="price">₹26999 <span class="original-price">₹42999</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.5  <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/kuwzssw0/computer/x/l/a/redmibook-15-pro-thin-and-light-laptop-redmi-original-imag7xhnakyazyma.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Redmi</h4>
+                <p class="description">RedmiBook Pro Core i5 11th Gen - (8 GB/512 GB SSD/Windows 11 Home) Thin and Light Laptop</p>
+                <p class="price">₹38999 <span class="original-price">₹59999</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes"> 4.2 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/kp5sya80/screen-guard/tempered-glass/o/v/n/apple-macbook-air-m1-13-3-inch-lightwings-original-imag3gh5xftgbpg3.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>APPLE</h4>
+                <p class="description">APPLE 2020 Macbook Air M1 - (8 GB/256 GB SSD/Mac OS Big Sur) MGN63HN/A</p>
+                <p class="price">₹86999 <span class="original-price">99900</span> <span class="discount">70% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.7 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+        </section>
+    </div>
+    <div class="pagination">
+        <span>Page 1 of 617</span>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+        <a href="#">Next</a>
+      </div>
+    
+      <div class="feedback-box">
+        <p>Did you find what you were looking for?</p>
+        <button onclick="alert('Thank you for your feedback!')">Yes</button>
+        <button onclick="alert('Sorry to hear that. We’ll improve!')">No</button>
+      </div>
+
+      <!-- Footer -->
+<div id="footerBody">
+   
+        <div class="list_cards">
+            <h4>About</h4>
+            <p>Contact Us</p>
+            <p>About Us</p>
+            <p>Career</p>
+            <p>Flipkart Stories</p>
+            <p>Press</p>
+            <p>Corporate Information</p>
+            
+        </div>
+        <div class="list_cards">
+            <h4>GROUP COMPANIES</h4>
+            <p>Myantra</p>
+            <p>Shopsy</p>
+            <p>ClearTrip</p>
+            
+        </div>
+        <div class="list_cards">
+            <h4>HELP</h4>
+            <p>Payment</p>
+            <p>Shipping</p>
+            <p>Cancellation & Returns</p>
+            <p>FAQ</p>
+        </div>
+        <div class="list_cards">
+            <h4>CONSUMER POLICY</h4>
+            <p>Cancellation & Returns</p>
+            <p>Terms of Use</p>
+            <p>Security</p>
+            <p>Privacy</p>
+            <p>Sitemap</p>
+            <p>Grevience Redressal</p>
+            <p>EPR Compliance</p>
+        </div>
+        <div class="list_cards">
+            <h4>Mail Us:</h4>
+            <p>Flipkart Internet Private Limited,</p>
+            <p>Buildings Alyssa, Begonia &</p>
+            <p>Clove Embassy Tech Village,</p>
+            <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+            <p>Bengaluru, 560103,</p>
+            <p>Karnataka, India</p>
+        <h4>Social:</h4>
+            <span id="socail-logo">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </span>
+        </div>
+        <div class="list_cards">
+            <h4>registered office address:</h4>
+            <p>Flipkart Internet Private Limited,</p>
+            <p>Buildings Alyssa, Begonia &</p>
+            <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+            <p>Bengaluru, 560103,</p>
+            <p>Karnataka, India</p>
+        </div>
+        
+    </div>
+    <hr>
+    <div id="footerMid">
+        <span  id="logo-tag"> 
+            <i class="fa-solid fa-store"></i> Become a Seller
+        </span>
+    
+        <span  id="logo-tag"> 
+            <i class="fa-solid fa-rectangle-ad"></i> Advertise
+        </span>
+    
+        <span  id="logo-tag"> 
+            <i class="fa-solid fa-gift"></i> Gift Cards
+        </span>
+    
+        <span  id="logo-tag"> 
+            <i class="fa-regular fa-circle-question"></i> Help Center
+        </span>
+    
+        <span > 
+            © 2007-2024 Flipkart.com
+        </span>
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fotter_payment_icn_2_900x_aff68517-98f4-4a82-9aee-2405cea66251_350x.png?v=1650262054"
+            alt="Payment Methods">
+        
+    </div>
+    
+</body>
+</html>
+<script src="/Navabar/JS/sidebar.js"></script>
+<script type="module" src="/Navabar/JS/index.js"></script>
+<script type="module" src="/Navabar/JS/mens.js"></script>

@@ -1,0 +1,120 @@
+.cart-count {
+  display: inline-block;
+  position: absolute;
+  top: 10px; /* Adjust according to design */
+  right: 20px; /* Adjust according to design */
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 4px 8px;
+  min-width: 20px;
+  text-align: center;
+  z-index: 2;
+  transform: translate(50%, -50%);
+}
+
+
+
+  .navbar .cart-icon button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; 
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar-header h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .sidebar-header button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .sidebar-content {
+    padding: 15px;
+  }
+  
+  /* Overlay */
+  .overlay {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 237, 237, 0.5);
+    display: none; /* Initially hidden */
+    z-index: 999;
+    transition: opacity 0.2s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none; /* Hide links by default */
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      background-color: #007bff;
+      border-radius: 5px;
+      padding: 10px;
+      width: 200px;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .nav-links.show {
+      display: flex; /* Show links on hamburger click */
+    }
+  }
+  

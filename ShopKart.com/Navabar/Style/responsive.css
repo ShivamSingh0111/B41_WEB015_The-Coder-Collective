@@ -1,0 +1,39 @@
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    #searchBar {
+      display: none; /* Hide search bar on small screens */
+    }
+  
+    .hamburger {
+      display: block;
+      position: absolute;
+      right: 10px;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #007bff;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      width: 200px;
+      border-radius: 5px;
+      padding: 10px 0;
+    }
+  
+    nav ul.show {
+      display: flex;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+  

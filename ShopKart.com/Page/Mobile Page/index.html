@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Mobile Section Clone</title>
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="/Navabar/image/shopcart.jpg" width="100" type="image/x-icon"  >
+    <link rel="stylesheet" href="/Navabar/Style/index.css">
+    <link rel="stylesheet" href="/Navabar/Style/sideBar.css">
+
+</head>
+<body>
+ 
+
+    <!-- Navbar section -->
+    <header>
+        <div id="logo">
+            <a href="/index.html"><img src="/Navabar/image/shopcart.jpg" alt="ShopKart logo" ></a>
+        </div>
+        <div id="searchBar">
+            <div id="searchIcon" style="color: blue;"><i class="fa-solid fa-magnifying-glass"></i></div>
+           <input type="text" placeholder="Search for Product,Brands and More">
+        </div>
+
+                <!-- hamburger part -->
+      <button class="hamburger" id="hamburger" style="color: black; ">&#9776;</button> 
+
+        <nav>
+          <ul>
+            <li id="loginLink" class="dropdown" style="color: blue;">
+              <i class="fa-regular fa-circle-user"></i> Login 
+              <i class="fa-solid fa-chevron-down"></i>
+              <div id="dropDown-content" class="dropdown-content">
+                <div style="display: flex; padding: 15px; justify-content: space-between;">
+                   <a style="color: black;" href="/Page/login.html"><h4>New Customer?</h4></a>
+                   <h4 style="font-weight: bold; color: rgb(54, 54, 236);">Sign Up</h4>
+                </div>
+                <hr>
+                <a href="#"> <i class="fa-regular fa-circle-user"></i> Profile</a>
+                <a href="#"> <i class="fa-brands fa-hornbill"></i> Flipkart Plus Zone</a>
+                <a href="#"> <i class="fa-solid fa-box"></i> Orders</a>
+                <a href="#"> <i class="fa-regular fa-heart"></i> Wishlist</a>
+                <a href="#"><i class="fa-solid fa-gift"></i> Reward</a>
+                <a href="#"><i class="fa-regular fa-credit-card"></i> Gift Card</a>
+              </div>
+            </li>
+          
+            <!-- cart Part -->
+            <li class="cart-icon">
+             
+              <div id="cartBtn" style="color: blue;"> <i class="fa-regular fa-circle-user"></i>Cart
+                <!-- <span id="cartCount" class="cart-count">0</span> -->
+              </div>
+            </li>
+            <a style="text-decoration: none;" href="./Page/Sellers page/index4.html"><li>
+              <i class="fa-solid fa-shop"></i> Become a Seller</li> </a>
+          </ul>
+        </nav>
+      </header>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+<div class="sidebar-header">
+  <h2>Cart</h2>
+  <button id="closeBtn">&times;</button>
+</div>
+<div class="sidebar-content" >
+  
+  
+  
+</div>
+</div>
+
+
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="Filtersidebar">
+            <!-- Categories -->
+            <div class="filter-category">
+                <h4>Categories</h4><br> 
+                <label><input type="checkbox"> Topwear</label><br><br> 
+                <label><input type="checkbox"> Shirts</label><br><br> 
+                <label><input type="checkbox"> T-shirts</label>
+            </div>
+
+            <br>
+
+            <!-- Gender -->
+            <div class="filter-brand">
+                <h4>Brand</h4><br> 
+                <select name="pets" id="pet-select">
+                    <option value="">Please choose a Brand</option>
+                    <option value="dog">Apple</option>
+                    <option value="cat">Poco</option>
+                    <option value="hamster">REDMI</option>
+                    <option value="parrot">MOTOROLA</option>
+                    <option value="spider">Cellecor</option>
+                    <option value="goldfish">Infinix</option>
+                </select>
+            </div>
+
+            <br>
+
+            <!-- Price -->
+            <div class="filter-price">
+                <h4>Price</h4><br> 
+                <div class="price-slider"> 
+                    <input type="range" min="0" max="1000">
+                    <div><br> 
+                        <input type="number" placeholder="Min"> <br> <br>  to  <br> <br><input type="number" placeholder="₹1000+">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Offers -->
+            <div class="filter-offers">
+                <h4>Offers</h4><br> 
+                <label><input type="checkbox"> Buy More, Save More</label><br> <br>
+                <label><input type="checkbox"> Special Price</label>
+            </div>
+
+            <br>
+
+            <!-- Customer Ratings -->
+            <div class="filter-ratings">
+                <h4>Customer Ratings</h4><br> 
+                <label><input type="checkbox"> 4★ & above</label><br> <br>
+                <label><input type="checkbox"> 3★ & above</label>
+            </div>
+
+            <br>
+
+            <!-- Discount -->
+            <div class="filter-discount">
+                <h4>Discount</h4><br> 
+                <label><input type="checkbox"> 10% or more</label><br> <br>
+                <label><input type="checkbox"> 20% or more</label>
+            </div>
+
+            
+        </aside>
+
+        <!-- Product Grid -->
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/b/o/e/-original-imagkgrxzahq3egj.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Infinix </h4>
+                <p class="description"> Infinix HOT 20 Play (Luna Blue, 64/4 GB)</p>
+                <p class="price">₹8199 <span class="original-price">₹11999</span> <span class="discount">31% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes"> 4.4 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/ku4ezrk0/mobile/b/o/m/c31-mzb0a0min-poco-original-imag7bzqxekkpkrv.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>POCO</h4>
+                <p class="description">POCO C31 (Blue, 64/4 GB) </p>
+                <p class="price">₹7499 <span class="original-price">₹11999</span> <span class="discount">37% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.3 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/i/4/d/e8-e8-cellecor-original-imaggsrcyhnhj6tv.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Cellecor</h4>
+                <p class="description">Cellecor E8 Plus</p>
+                <p class="price">₹1469 <span class="original-price">₹1569</span> <span class="discount">6% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">3.6 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/s/b/e/-original-imagkgrxdzzjuguw.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Infinix</h4>
+                <p class="description">Infinix HOT 20 Play (Aurora Green, 64 GB)</p>
+                <p class="price">₹8199 <span class="original-price">₹11999</span> <span class="discount">31% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.4 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/p/f/u/-original-imagkgrxdsqpdznh.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Infinix</h4>
+                <p class="description">Infinix HOT 20 Play (Racing Black, 64 GB)</p>
+                <p class="price">₹8199 <span class="original-price">₹11999</span> <span class="discount">31% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.4 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/g/p/x/-original-imagk4nz54s7a7rf.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>REDMI</h4>
+                <p class="description">REDMI 10 (Caribbean Green, 64 GB)</p>
+                <p class="price">₹9299 <span class="original-price">₹14999</span> <span class="discount">38% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4  <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/h/r/b/-original-imagh29eqd3zrvaf.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>MOTOROLA</h4>
+                <p class="description">MOTOROLA G62 5G (Midnight Gray, 128 GB)</p>
+                <p class="price">₹15999 <span class="original-price">₹24999</span> <span class="discount">36% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes"> 4.1 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/k/y/d/iphone-11-256-u-mwm82hn-a-apple-0-original-imafkg25mhaztxns.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>APPLE</h4>
+                <p class="description">APPLE iPhone 11 (White, 128 GB)</p>
+                <p class="price">₹46999 <span class="original-price">₹48999</span> <span class="discount">4% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.7 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/l2p23rk0/mobile/s/4/3/-original-imagdznhcbdfwfud.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Vivo</h4>
+                <p class="description">Vivo T1 44W (Starry Sky, 128 GB)</p>
+                <p class="price">₹14999 <span class="original-price">₹19999</span> <span class="discount">25% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">3.9 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/9/q/j/-original-imagk4nzwhudqhcz.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>REDMI</h4>
+                <p class="description">REDMI 10 (Midnight Black, 64 GB)</p>
+                <p class="price">₹9299 <span class="original-price">₹14999</span> <span class="discount">38% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.1 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/l2p23rk0/mobile/x/b/y/-original-imagdznhnzmzfbwx.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Vivo</h4>
+                <p class="description">Vivo T1 44W (Midnight Galaxy, 128 GB)</p>
+                <p class="price">₹15999 <span class="original-price">₹20990</span> <span class="discount">23% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.1 <i class="fa-solid fa-star"></i> </p> 
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/t/6/g/-original-imagh29eknx3cavh.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>MOTOROLA</h4>
+                <p class="description">MOTOROLA G62 5G (Frosted Blue, 128 GB)</p>
+                <p class="price">₹15999 <span class="original-price">₹24999</span> <span class="discount">36% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.7 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/0/8/4/-original-imagfhu75eupxyft.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>SAMSUNG</h4>
+                <p class="description">SAMSUNG Galaxy F13 (Waterfall Blue, 64 GB)</p>
+                <p class="price">₹11099 <span class="original-price">₹14999</span> <span class="discount">26% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.2 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/l29c9e80/mobile/l/g/m/-original-imagdnefhnhztahe.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>MOTOROLA</h4>
+                <p class="description">MOTOROLA g52 (Charcoal Grey, 128 GB)</p>
+                <p class="price">₹12999 <span class="original-price">₹19999</span> <span class="discount">35% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.7 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/8/9/n/-original-imagc7tmhcbrarpk.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>POCO</h4>
+                <p class="description">POCO</p>
+                <p class="price">₹11999 <span class="original-price">₹17999</span> <span class="discount">33% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.2 <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/t/6/g/-original-imagh29eknx3cavh.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>MOTOROLA</h4>
+                <p class="description">MOTOROLA G62 5G (Frosted Blue, 128 GB)</p>
+                <p class="price">₹14999 <span class="original-price">₹21999</span> <span class="discount">31% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">3  <i class="fa-solid fa-star"></i></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+        </section>
+    </div>
+    <div class="pagination">
+        <span>Page 1 of 617</span>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+        <a href="#">Next</a>
+      </div>
+    
+      <div class="feedback-box">
+        <p>Did you find what you were looking for?</p>
+        <button onclick="alert('Thank you for your feedback!')">Yes</button>
+        <button onclick="alert('Sorry to hear that. We’ll improve!')">No</button>
+      </div>
+
+      <!-- Footer -->
+<div id="footerBody">
+   
+        <div class="list_cards">
+            <h4>About</h4>
+            <p>Contact Us</p>
+            <p>About Us</p>
+            <p>Career</p>
+            <p>Flipkart Stories</p>
+            <p>Press</p>
+            <p>Corporate Information</p>
+            
+        </div>
+        <div class="list_cards">
+            <h4>GROUP COMPANIES</h4>
+            <p>Myantra</p>
+            <p>Shopsy</p>
+            <p>ClearTrip</p>
+            
+        </div>
+        <div class="list_cards">
+            <h4>HELP</h4>
+            <p>Payment</p>
+            <p>Shipping</p>
+            <p>Cancellation & Returns</p>
+            <p>FAQ</p>
+        </div>
+        <div class="list_cards">
+            <h4>CONSUMER POLICY</h4>
+            <p>Cancellation & Returns</p>
+            <p>Terms of Use</p>
+            <p>Security</p>
+            <p>Privacy</p>
+            <p>Sitemap</p>
+            <p>Grevience Redressal</p>
+            <p>EPR Compliance</p>
+        </div>
+        <div class="list_cards">
+            <h4>Mail Us:</h4>
+            <p>Flipkart Internet Private Limited,</p>
+            <p>Buildings Alyssa, Begonia &</p>
+            <p>Clove Embassy Tech Village,</p>
+            <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+            <p>Bengaluru, 560103,</p>
+            <p>Karnataka, India</p>
+        <h4>Social:</h4>
+            <span id="socail-logo">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </span>
+        </div>
+        <div class="list_cards">
+            <h4>registered office address:</h4>
+            <p>Flipkart Internet Private Limited,</p>
+            <p>Buildings Alyssa, Begonia &</p>
+            <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+            <p>Bengaluru, 560103,</p>
+            <p>Karnataka, India</p>
+        </div>
+        
+    </div>
+    <hr>
+    <div id="footerMid">
+        <span  id="logo-tag"> 
+            <i class="fa-solid fa-store"></i> Become a Seller
+        </span>
+    
+        <span  id="logo-tag"> 
+            <i class="fa-solid fa-rectangle-ad"></i> Advertise
+        </span>
+    
+        <span  id="logo-tag"> 
+            <i class="fa-solid fa-gift"></i> Gift Cards
+        </span>
+    
+        <span  id="logo-tag"> 
+            <i class="fa-regular fa-circle-question"></i> Help Center
+        </span>
+    
+        <span > 
+            © 2007-2024 Flipkart.com
+        </span>
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fotter_payment_icn_2_900x_aff68517-98f4-4a82-9aee-2405cea66251_350x.png?v=1650262054"
+            alt="Payment Methods">
+        
+    </div>
+    
+</body>
+</html>
+<script src="/Navabar/JS/sidebar.js"></script>
+<script type="module" src="/Navabar/JS/index.js"></script>
+<script type="module" src="/Navabar/JS/mens.js"></script>
